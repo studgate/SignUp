@@ -18,6 +18,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    NSURLRequest* req = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://yujiiin.com/signup/index.php"]];
+    [webView loadRequest:req];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
